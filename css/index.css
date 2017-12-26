@@ -1,0 +1,609 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar{
+    display:none;
+}
+
+body {
+    width: 100%;
+
+    margin-bottom: 4.8em;
+}
+
+
+
+
+/*-------商户信息------------------------*/
+.title {
+    padding: .8em;
+
+    font-size: 1.2em;
+    font-weight: bold;
+
+    /*background-color: #E8E8E8;*/
+
+
+}
+
+.good-info {
+    width: 100%;
+    /*height: 11vh;*/
+    padding: .6em 0;
+
+    /*font-size: 2em;*/
+    color: #4F4F4F;
+
+    background-color: #F0F0F0;
+    /*background: -webkit-gradient(linear, 0 0, 0 100%, from(#F0F0F0), to(#aaa)); !** Chrome Safari **!*/
+    /*background: -moz-linear-gradient(top, #eee, #aaa); !** FireFox **!*/
+    /*background: -o-linear-gradient(top, #eee, #aaa);  !** Opear **!*/
+    /*background: -ms-linear-gradient(#eeeeee 0%,#aaaaaa 100%);  !** IE9 IE10 **!*/
+    /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee',endColorstr='#aaaaaa',grandientType=1); !** IE7 **!*/
+    /*-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee',endColorstr='#aaaaaa',grandientType=1); !** IE8 **!*/
+}
+
+.info1{
+    display: flex;
+    align-content: center;
+
+    height: 6.5vh;
+
+    line-height: 6.5vh;
+}
+
+.info2 {
+    display: flex;
+    align-content: center;
+
+    height: 6.5vh;
+
+    line-height: 6.5vh;
+}
+
+.shop-name {
+    flex: 0 90%;
+    display: flex;
+    align-content: center;
+
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.shop-name .name {
+    /*font-size: 1.1em;*/
+    font-weight: bold;
+    margin-left: .3em;
+}
+
+.shop-place {
+    flex: 0 90%;
+    display: flex;
+    align-content: center;
+
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.shop-place .place {
+    font-size: .8em;
+    margin-left: .3em;
+}
+
+.icon-max {
+    font-size: 23px !important;
+}
+
+.icon-max1 {
+    font-size: 22px !important;
+}
+
+.icon-max2 {
+    font-size: 23px !important;
+}
+
+
+
+
+/*----------------赞助好友信息------------*/
+.good-brothers {
+    position: relative;
+
+    margin: 1em;
+    padding: 1.5em 0 0 0;
+}
+
+.already-bro {
+    z-index: 5;
+    position: absolute;
+    top: .5em;
+    left: 25%;
+
+    width: 50vw;
+    padding: .4em;
+
+    color: white;
+    text-align: center;
+
+    background-color: #FF6633;
+    border-radius: 50px;
+}
+
+.bro-info {
+    width: 100%;
+    padding: 1em;
+
+
+    border: 1px solid #FF6633;
+}
+
+.bro-avatar {
+    display: flex;
+    flex-flow:  row wrap;
+    align-content: flex-start;
+
+    width: 100%;
+    margin-top: 1em;
+}
+
+.bro-avatar img {
+    box-sizing: border-box;
+    flex: 0 0 12.5%;
+
+    width: 6vw;
+    height: 6vh;
+    padding: .3em;
+}
+
+.rest-people {
+    text-align: center;
+    color: #9C9C9C;
+    line-height: 1.8em;
+    margin-top: 1em;
+}
+
+.rest-people .number {
+    color: #FF6633;
+}
+
+
+
+/*内容----------*/
+.good-content {
+    margin: 1em;
+    line-height: 1.8em;
+}
+
+
+
+
+
+/*--------------底部------------------*/
+.bottom-bar {
+    display: flex;
+    z-index: 6;
+    position: fixed;
+    bottom: 0;
+    left:0;
+
+    width: 100%;
+    height: 4em;
+
+    /*font-size: 2em;*/
+    background-color: #F1F1F1;
+    border-top: 1px solid #ccc;
+    /*border-left: 1px solid #ccc;*/
+    /*border-right: 1px solid #ccc;*/
+}
+
+.weare {
+    flex: 1;
+
+    padding: .3em;
+
+    overflow: hidden;
+    text-align: center;
+
+    border-right: 1px solid #ccc;
+}
+
+.weare .icon-lipin {
+    font-size: 1.8em;
+    color: #FF6633;
+}
+
+
+.weare .metoo {
+    display: inline-block;
+
+    font-size: .8em
+}
+
+.pay {
+    display: flex;
+    align-content: center;
+    flex: 6;
+    height: 4em;
+
+    line-height: 4em;
+}
+
+.pay img {
+    /*display: inline-block;*/
+    position: relative;
+    align-self: center;
+
+    height: 3.5em;
+    width: 3.5em;
+    padding: .5em;
+
+    border-radius: 50%;
+}
+
+.pay .user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+
+    height: 4em;
+    padding: .3em;
+}
+
+.pay .user-name {
+    height: 1.8em;
+    font-size: .8em;
+    line-height: 1.8em;
+
+}
+
+.pay .motto {
+    height: 1.8em;
+    font-size: .6em;
+    color: #FF6633;
+    line-height: 1.8em;
+}
+
+.pay-button {
+    align-self: center;
+    position: absolute;
+    right: .3em;
+
+
+    height: 2.5em;
+    width: 5em;
+    padding: 0 .3em 0 .3em;
+
+    font-size: 1.2em;
+    line-height: 2.5em;
+    color: white;
+    text-align: center;
+
+    background-color: #FF6633;
+    border-radius: 5px;
+}
+
+.pay .rest-money {
+    margin-left: 1em;
+}
+
+.rest-money .number {
+    font-size: 2em;
+    color: #FF6633;
+}
+
+
+/*----------红包-----------*/
+.cover-lay {
+    display: flex;
+    position: fixed;
+    z-index: 66;
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 .8em 0 .8em;
+
+    background: rgba(0,0,0, 0.5);
+}
+
+.red-packet {
+    position: relative;
+    align-self: center;
+
+    margin: 0 1em 0 1em;
+    width: 91vw;
+    height: 16em;
+
+    background-color: #FF3333;
+    border-radius: 5px;
+}
+
+.cover-lay .cover-lay-image {
+    z-index: 555;
+    position: absolute;
+    top: calc(50% - 10em);
+    justify-self: center;
+    left: calc(50% - 2em);
+
+    margin: 0 auto;
+    width: 4em;
+    height: 4em;
+
+    border-radius: 4em;
+}
+
+.close {
+    position: absolute;
+    right: 1.5vw;
+    top: 1vh;
+}
+
+.close .icon-guanbi{
+    font-size: 2em;
+    color: white;
+}
+
+.red-packet .user {
+    margin-top: 4em;
+
+    text-align: center;
+    color: white;
+}
+
+.red-packet .red-packet-money {
+    margin-top: .5em;
+    margin-bottom: .5em;
+
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #FFCC99;
+}
+
+.red-packet .yuan {
+    margin-left: 3vw;
+
+
+    font-size: 16px;
+}
+
+.red-packet .grant{
+    align-self: center;
+
+    height: 3em;
+    margin: 0 auto;
+    width: 70vw;
+
+    text-align: center;
+    line-height: 3em;
+    color: #FF3333;
+
+    background-color: #FFCC99;
+    border-radius: 5px;
+}
+
+
+/*------活动 信息------*/
+
+.info-card {
+    /*display: flex;*/
+    z-index: 555;
+    position: relative;
+    align-self: center;
+    /*justify-content: center;*/
+    /*flex-flow: column;*/
+
+
+    margin: 0 auto;
+
+    width: 18em;
+    height: 28em;
+    padding: 2em 0;
+    background-color: #209FD6;
+    border-radius: 5px;
+
+}
+
+.info-card .info {
+    /*margin: 1em 0 1em 0;*/
+    overflow-y: scroll;
+    height: 24em;
+    z-index: 550;
+}
+
+.cover-lay .info-close {
+    position: fixed;
+    z-index: 555;
+    right: calc( 50% - 9.5em);
+    top: calc( 50% - 14.5em);
+}
+
+.info-close .icon-guanbi{
+    font-size: 1.6em;
+    color: white;
+}
+
+.info-card .title {
+    margin: 0 auto;
+
+    text-align: center;
+    color: white;
+}
+
+.info-card .rules {
+    padding: 1em;
+
+    color: white;
+    font-size: .8em;
+    line-height: 1.5em;
+}
+
+
+/*------二维码-----*/
+.scan-card {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    align-self: center;
+
+    margin: 0 auto;
+    width: 18em;
+    height: 18em;
+
+    background-color: white;
+    border-radius: 5px;
+}
+
+.scan-card .title {
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.scan-card .scan-card-image {
+    width: 10em;
+    height: 10em;
+    margin: 0 auto;
+
+    border-radius: 0;
+}
+
+.tips {
+    margin: 0 auto;
+
+    padding-top: 1em;
+}
+
+
+/*----------收货地址------------------*/
+.address {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    align-self: center;
+
+    margin: 0 auto;
+    width: 18em;
+    height: 20em;
+
+    background-color: white;
+    border-radius: 5px;
+}
+
+.address input {
+    margin: .3em 2em .3em 2em;
+    padding: .9em;
+}
+
+.address .title {
+    text-align: center;
+}
+
+.save {
+    width: 8em;
+    padding: 1em;
+
+    text-align: center;
+    margin-top: 1.54em;
+    align-self: center;
+
+    background-color: #209FD6;
+    border-radius: 5px;
+}
+
+#address-info .icon-guanbi {
+    position: fixed;
+    top: calc(50% - 10.8em);
+    right: calc(50% - 9.8em);
+    color: white;
+}
+
+
+
+
+
+/*------核销号码-----*/
+.code {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    align-self: center;
+
+    margin: 0 auto;
+    width: 18em;
+    height: 21em;
+
+    background-color: white;
+    border-radius: 5px;
+}
+
+.code .title {
+    text-align: center;
+}
+
+.code .code-image {
+    justify-self: center;
+
+    margin: 0 auto;
+    width: 4em;
+    height: 4em;
+
+    border-radius: 4em;
+}
+
+.code input {
+    margin: .5em 2em;
+    padding: 1em;
+}
+
+.code .username {
+    text-align: center;
+    margin: .2em;
+}
+
+
+#code .icon-guanbi{
+    position: fixed;
+    top: calc(50% - 6.5em);
+    right: calc(50% - 5.5em);
+    color: white;
+    font-size: 30px;
+}
+
+.code .confirm {
+    width: 7em;
+    padding: .5em;
+
+    text-align: center;
+    margin-top: 1em;
+    align-self: center;
+    color: white;
+
+    background-color: #209FD6;
+    border-radius: 5px;
+}
+
+
+
+
+/*---------*/
+#coverLay {
+    display: none;
+}
+
+#scancore {
+    display: none;
+}
+
+#infocard {
+    display: none;
+}
+
+#address-info {
+    display: none;
+}

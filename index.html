@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>大家为我来买单</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/slider.css">
+
+    <!--<link rel="stylesheet" href="css/slider1.css">-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!--<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>-->
+    <script src="js/index.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_506710_iop348hs7deljtt9.css">
+</head>
+
+<body>
+    <!-----------------------轮播图------------------------>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="imgs/1.jpg">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="imgs/2.jpg">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="imgs/3.jpg">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="imgs/4.jpg">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="imgs/5.jpg">
+            </div>
+
+        </div>
+        <div class="overlay">
+            <span class="rest">剩余<span class="max"> 4.5 </span>元</span>
+            <span class="total-people">30个人赞助可成单 <span class="iconfont icon-yibantishi icon-max" id="info"></span></span>
+        </div>
+    </div>
+    <div class="title">5元coco珍珠奶茶，小小赞助，圆我5元早餐梦，渣渣渣！</div>
+    <!-----------------------商品信息------------------------>
+    <div class="good-info">
+        <div class="info1">
+            <span class="shop-name">
+                <span class="iconfont icon-shouye icon-max"></span>
+                <span class="name">coco奶茶国贸店</span>
+            </span>
+            <span class="iconfont icon-erweima icon-max1" id="scaninfo"></span>
+        </div>
+
+        <div class="info2">
+            <span class="shop-place" id="shopplace">
+                <span class="iconfont icon-dibiao icon-max"></span>
+                <span class="place" id="place">海南省海口市龙华区银通国际34层</span>
+            </span>
+            <span class="iconfont icon-dianhua icon-max1"></span>
+        </div>
+    </div>
+
+    <!-------------------------赞助好友------------------------------>
+    <div class="good-brothers">
+        <div class="already-bro">已赞助好友 11 人</div>
+        <div class="bro-info">
+            <div class="bro-avatar">
+                <img src="imgs/1.jpg">
+                <img src="imgs/1.jpg">
+                <img src="imgs/1.jpg">
+                <img src="imgs/1.jpg">
+                <img src="imgs/1.jpg">
+                <img src="imgs/1.jpg">
+                <img src="imgs/1.jpg">
+                <img src="imgs/1.jpg">
+                <img src="imgs/1.jpg">
+                <img src="imgs/1.jpg">
+                <img src="imgs/1.jpg">
+
+            </div>
+            <div class="rest-people">还差<span class="number">19</span>位好友赞助，才可支付购买<br>多多发好友与朋友，获得红包赞助</div>
+        </div>
+    </div>
+    <!-----------------------内容------------------------>
+    <div class="good-content">
+        食彩之国：意面的新世界 毛蟹 番茄 咖喱 竹笋 马鲛鱼 章鱼 北鱿 茄子烹 第一季 netflix 四集申夜食堂 全三集台客狂飨曲清真的味道 全五集川菜的品格 btv 全六集菲尔的环球饕餮 全六集食物的故事 国家地理 全五集食物真相中国人的零食 全两集盘中邱园 BBC 全四集御膳房 国宝档案 全九集碟碟相传 spinning plates中国面之旅 全16集花样早餐 cctv 全五集开厨回家 全十集樱之味 全五集辣椒的味道 全四集老广的味道 全五集行走的筷子 cctv 全31集舌尖上的重庆 全六集美食纵贯现 全六集宁夏味道 全五集料理狂人林恩 第一季 全13集舌尖上的法国 全十集福州之味 全三集上海之味 BBC好味广州简单意面 BBC 全四集味道云南 cctv 全十集豆腐味道·溯源篇 五集味道中山 全六集舌尖上的新年新疆的味道 全十
+    </div>
+
+    <!-----------------------底部按钮栏------------------------>
+    <div class="bottom-bar">
+        <span class="weare"><span class="iconfont icon-lipin"></span> <span class="metoo">我也要</span></span>
+        <span class="pay">
+            <img src="imgs/1.jpg">
+            <span class="user">
+                <span class="user-name">冷面无情韦小宝</span>
+                <span class="motto">请为我打call，验友情</span>
+            </span>
+            <span class="pay-button" id="bottomPay">立即支付</span>
+        </span>
+        <!--<span class="pay">-->
+            <!--<span class="rest-money">剩余 <span class="number">4.5</span> 元</span>-->
+            <!--<span class="pay-button" id="bottomPay">立即支付</span>-->
+        <!--</span>-->
+    </div>
+
+    <!-----------------------红包------------------------>
+    <div class="cover-lay" id="coverLay">
+        <img class="cover-lay-image"src="imgs/avatar.jpg">
+        <div class="red-packet">
+
+            <span class="close" id="close"><span class="iconfont icon-guanbi"></span></span>
+            <div class="user">羊子</div>
+            <div class="red-packet-money">1.04<span class="yuan">元</span></div>
+            <div class="grant">赏红包</div>
+        </div>
+    </div>
+
+    <!-----------------------活动规则------------------------>
+    <div class="cover-lay"  id="infocard">
+        <div class="info-card">
+            <div class="info">
+                <span class="info-close" id="info-close"><span class="iconfont icon-guanbi"></span></span>
+
+                <div class="title">活动规则</div>
+                <div class="rules">食彩之国：意面的新世界 毛蟹 番茄 咖喱 竹笋 马鲛鱼 章鱼 北鱿 茄子烹 第一季 netflix 四集申夜食堂 全三集台客狂飨曲清真的味道 全五集川菜的品格 btv 全六集菲尔的环球饕餮 全六集食物的故事 国家地理 全五集食物真相中国人的零食 全两集盘中邱园 BBC 全四集御膳房 国宝档案 全九集碟碟相传 spinning plates中国面之旅 全16集花样早餐 cctv 全五集开厨回家 全十集樱之味 全五集辣椒的味道 全四集老广的味道 全五集行走的筷子 cctv 全31集舌尖上的重庆 全六集美食纵贯现 全六集宁夏味道 全五集料理狂人林恩 第一季 全13集舌尖上的法国 全十集福州之味 全三集上海之味 BBC好味广州简单意面 BBC 全四集味道云南 cctv 全十集豆腐味道·溯源篇 五集味道中山 全六集舌尖上的新年新疆的味道 全十
+                    食彩之国：意面的新世界 毛蟹 番茄 咖喱 竹笋 马鲛鱼 章鱼 北鱿 茄子烹 第一季 netflix 四集申夜食堂 全三集台客狂飨曲清真的味道 全五集川菜的品格 btv 全六集菲尔的环球饕餮 全六集食物的故事 国家地理 全五集食物真相中国人的零食 全两集盘中邱园 BBC 全四集御膳房 国宝档案 全九集碟碟相传 spinning plates中国面之旅 全16集花样早餐 cctv 全五集开厨回家 全十集樱之味 全五集辣椒的味道 全四集老广的味道 全五集行走的筷子 cctv 全31集舌尖上的重庆 全六集美食纵贯现 全六集宁夏味道 全五集料理狂人林恩 第一季 全13集舌尖上的法国 全十集福州之味 全三集上海之味 BBC好味广州简单意面 BBC 全四集味道云南 cctv 全十集豆腐味道·溯源篇 五集味道中山 全六集舌尖上的新年新疆的味道 全十
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-----------------------二维码------------------------>
+    <div class="cover-lay" id="scancore">
+        <div class="scan-card">
+            <div class="title">为我买单</div>
+            <img  class="scan-card-image"src="imgs/scancore.png" class="scancore"/>
+
+            <div class="tips">
+                长按上面二维码，扫描关注
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------收货地址------------------------>
+    <div class="cover-lay" id="address-info">
+        <span class="iconfont icon-guanbi" id="addressClose"></span>
+        <div class="address">
+            <div class="title">收货地址</div>
+            <input placeholder="请输入姓名">
+            <input placeholder="请输入收货地址">
+            <input placeholder="请输入手机号码">
+            <div class="save">保存</div>
+        </div>
+    </div>
+
+    <!-----------------------核销号码--------------------------->
+
+    <div class="cover-lay" id="code">
+        <span class="iconfont icon-guanbi" id="codeClose"></span>
+        <div class="code">
+            <div class="title">5元coco珍珠奶茶，小小赞助，圆我5元早餐梦，渣渣渣！</div>
+            <img class="code-image"src="imgs/avatar.jpg">
+            <div class="username">羊子</div>
+            <input placeholder="核销号码">
+            <div class="confirm">确认核销</div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    var coverLay = $("#coverLay"); //红包
+    var infocard = $ ("#infocard"); //规则
+    var scancore = $ ("#scancore"); //二维码
+    var place = $ ("#place"); //
+    var shopplace = $ ("#shopplace");
+    var slider = $("#slider"); //轮播图
+
+
+
+    $("#bottomPay").click(function () {
+        coverLay.css("display","flex");;
+    });
+    $("#close").click(function () {
+        coverLay.hide();
+    });
+
+    $("#info").click(function () {
+        infocard.css("display","flex");
+    })
+
+    $("#info-close").click(function () {
+        infocard.css("display","none");
+    })
+
+    $("#scancore").click(function () {
+        $(this).hide();
+    })
+
+    $("#scaninfo").click(function(){
+        $("#scancore").css("display","flex");
+    })
+
+    $("#addressClose").click(function(){
+        $("#address-info").css("display", "none");
+    })
+
+    place.click(function() {
+        var placename = place.text();
+        console.log(placename);
+        var link = "https://m.amap.com/search/mapview/keywords=" + placename;
+        window.location.href = link;
+    })   //点击跳到地图，具体位置
+
+
+    $("#codeClose").click(function(){
+        $("#code").css("display", "none");
+    })
+
+
+
+    //------------------------轮播图-------------
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+</script>
+</html>
+
+
+
